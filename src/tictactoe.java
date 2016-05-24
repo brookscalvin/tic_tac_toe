@@ -88,7 +88,7 @@ public class tictactoe {
 	}
 
 	public static void getXorO(String[][] gameBoard, int row, int column, int counter) {//If the counter falls on any of the following number, then it's the turn of X. Otherwise, It's the turn of O
-		if (counter == 1 || counter == 3 || counter == 5 || counter == 7 || counter == 9) {
+		if (counter % 2 != 0) {
 			gameBoard[row][column] = "X  ";
 		} else {
 			gameBoard[row][column] = "O  ";
